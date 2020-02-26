@@ -6,23 +6,23 @@ module.exports = {
   schema: {
     Trade: {
       schemaExchangeData: {
-        id: Number,
+        id: Number
       },
 
       methods: {
-        syncRange: syncTradesRange,
-      },
+        syncRange: syncTradesRange
+      }
     },
 
     Candle: {
       schemaExchangeData: {
-        type: String,
+        type: String
       },
 
       methods: {
         syncRange: syncCandlesRange,
-        auditGaps: auditCandleGaps,
+        auditGaps: auditCandleGaps
       }
     }
-  },
+  }
 }
